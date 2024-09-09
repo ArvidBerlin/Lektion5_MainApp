@@ -64,4 +64,22 @@ public class UserService
         }
         return null!; 
     }
+
+    public User GetUser(string email)
+    {
+        try
+        {
+            var user = _users.FirstOrDefault(x => x.Email == email);
+            if (user != null)
+            {
+                return user;
+            }
+        }
+
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex.Message);
+        }
+        return null!;
+    }
 }
