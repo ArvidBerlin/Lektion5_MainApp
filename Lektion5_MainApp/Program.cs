@@ -2,7 +2,7 @@
 
 while (true)
 {
-    Console.WriteLine("Hejsan");
+    Console.WriteLine("Hejsan!");
     MenuService.MainMenu();
 }
 
